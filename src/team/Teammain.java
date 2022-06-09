@@ -2,6 +2,8 @@ package team;
 
 import java.util.Scanner;
 
+import members.Member;
+
 public class Teammain {
 
 		public static void main(String[] args) {
@@ -18,7 +20,10 @@ public class Teammain {
 				num = input.nextInt();
 				
 				switch(num) {
-				case 1 : break;
+				case 1 :
+					Member m = new Member();
+					m.membership();
+					break;
 				case 2 : break;
 				case 3 : break; 
 				
