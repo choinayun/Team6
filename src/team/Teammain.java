@@ -3,6 +3,8 @@ package team;
 import java.util.Scanner;
 
 import board.board;
+import members.Member;
+
 
 public class Teammain {
 
@@ -20,7 +22,10 @@ public class Teammain {
 				num = input.nextInt();
 				
 				switch(num) {
-				case 1 : break;
+				case 1 :
+					Member m = new Member();
+					m.membership();
+					break;
 				case 2 : break;
 				case 3 : board.boardForm(); break;
 				
