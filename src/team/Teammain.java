@@ -2,12 +2,14 @@ package team;
 
 import java.util.Scanner;
 
+import board.board;
+
 public class Teammain {
 
 		public static void main(String[] args) {
 			
 			int num;
-			
+			board board = new board();
 			Scanner input = new Scanner(System.in);
 			
 			while(true) {
@@ -20,7 +22,7 @@ public class Teammain {
 				switch(num) {
 				case 1 : break;
 				case 2 : break;
-				case 3 : break; 
+				case 3 : board.boardForm(); break;
 				
 				}
 			
