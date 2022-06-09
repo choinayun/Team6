@@ -19,7 +19,10 @@ public class Teammain {
 				
 				switch(num) {
 				case 1 : break;
-				case 2 : break;
+				case 2 : 
+					EventFunc ef = new EventFunc();
+					ef.print();
+					break;
 				case 3 : break; 
 				
 				}
