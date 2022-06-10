@@ -3,6 +3,7 @@ package team;
 import java.util.Scanner;
 
 import board.board;
+import event.EventFunc;
 import members.Member;
 
 
@@ -12,6 +13,7 @@ public class Teammain {
 			
 			int num;
 			board board = new board();
+			EventFunc ef = new EventFunc();
 			Scanner input = new Scanner(System.in);
 			
 			while(true) {
@@ -26,7 +28,9 @@ public class Teammain {
 					Member m = new Member();
 					m.membership();
 					break;
-				case 2 : break;
+				case 2 : 
+					ef.print();
+					break;
 				case 3 : board.boardForm(); break;
 				
 				}
